@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Parkinsans", sans-serif;
+}
+body {
+    color: white;
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 60px 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+/* nav bar bro */
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(28, 28, 28);
+    border-radius: 10px;
+    grid-column: 1/3;
+    /* tag nav */
+    nav {
+        width: 93%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .profile {
+        padding: 20px;
+        background-image: url("/START-CODE/START-CODE/GridWebsite/image.jpg");
+        background-size: cover;
+        clip-path: circle();
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    li a {
+        font-size: 20px;
+        color: white;
+    }
+    input {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border-style: none;
+        background-color: rgb(42, 42, 42);
+    }
+    #buyPremium {
+        border-style: none;
+        color: black;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    #buyPremium:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+}
+.sideBox {
+    background-color: rgb(28, 28, 28);
+    border-radius: 10px;
+    padding: 20px;
+
+    .yourAlbums {
+        text-align: center;
+        color: black;
+        background-color: white;
+        padding: 10px 5px;
+        border-radius: 25px;
+        margin-bottom: 30px;
+    }
+    .list1 {
+        padding: 15px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .list1:hover {
+        background-color: rgb(42, 42, 42);
+        transition: 0.2s;
+    }
+}
+.footer {
+    background-color: rgb(28, 28, 28);
+    border-radius: 10px;
+    padding: 20px;
+    grid-column: 3/1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .line {
+        width: 40%;
+        padding: 3px;
+        justify-self: center;
+        background-color: rgb(68, 68, 68);
+    }
+    .play {
+        cursor: pointer;
+        font-size: 25px;
+        padding: 10px;
+        width: 100px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.container {
+    background-color: rgb(50, 49, 49);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 220px 1fr;
+}
+.topBox {
+    border-radius: 25px;
+    background-image: url("/START-CODE/START-CODE/GridWebsite/podcast2.jpg");
+    background-size: 600px;
+    background-color: rgb(28, 28, 28);
+    grid-column: 1/3;
+}
+.midBox {
+    border-radius: 25px;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+
+    .recently {
+        background-color: rgb(68, 68, 68);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #recently {
+        font-size: 20px;
+        text-align: center;
+    }
+    .recently:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+        background-color: rgb(123, 121, 121);
+    }
+
+}
+.anotherBox {
+    padding: 30px; 
+    gap: 20px;
+    border-radius: 25px;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    #Podcast {
+        font-size: 20px;
+    }
+    .otherChannel {
+        gap: 10px;
+        display: grid;
+        align-content: center;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .smallBox {
+        gap: 10px;
+        font-weight: bold;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 5px;
+        background-color: rgb(52, 52, 52);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #logo {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 25%;
+        height: 100%;
+    }
+    .smallBox:hover {
+        background-color: rgb(68, 68, 68);
+        transition: 0.2s;
+    }
+
+}
